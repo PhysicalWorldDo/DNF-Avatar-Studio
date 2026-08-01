@@ -1,0 +1,19 @@
+node_modules/
+dist/
+target/
+**/target/
+
+*.log
+*.tmp
+*.bak
+*.pyc
+__pycache__/
+
+config/
+data/
+cache/
+logs/
+
+# Public source snapshots intentionally exclude internal documentation and data.
+docs/
+src-tauri/avatar_data.dll

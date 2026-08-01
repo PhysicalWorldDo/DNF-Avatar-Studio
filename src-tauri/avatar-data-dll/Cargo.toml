@@ -1,0 +1,23 @@
+[package]
+name = "avatar-data-dll"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "avatar_data"
+crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "avatar_data_pack"
+path = "src/bin/avatar_data_pack.rs"
+
+[dependencies]
+chacha20poly1305 = "0.10"
+csv = "1"
+flate2 = "1"
+lz4_flex = "0.11"
+postcard = { version = "1", features = ["alloc"] }
+rand = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
